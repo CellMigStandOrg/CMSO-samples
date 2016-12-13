@@ -8,7 +8,7 @@ python: 2.7
 sudo: false
 
 before_install:
-  - pip install -r requirements
+  - pip install -r requirements.txt
 
 script:
   - cd IDR0001 && jupyter nbconvert --to notebook --execute convert.ipynb
