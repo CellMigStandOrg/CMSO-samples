@@ -1,0 +1,6 @@
+ unpacked = zip(frameID, cellIDs, trajectoriesX, trajectoriesY, t)
+        with open(os.path.join(csvdir, 'data.csv'), 'wt') as f1:
+            writer = csv.writer(f1, lineterminator='\n')
+            writer.writerow(('frameID', 'track_no', 'x', "y", "time",))
+            for value in unpacked:
+                writer.writerow(value)
