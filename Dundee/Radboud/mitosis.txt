@@ -1,0 +1,3 @@
+Slice	Nuclei Count	Mitosis	Mitosis X	Mitosis Y	Mitosis Distance
+2	201	1	160	958	447.5757
+4	179	1	180	240	349.8571
