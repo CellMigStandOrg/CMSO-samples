@@ -1,0 +1,14 @@
+language: python
+
+python: 2.7
+
+# This (sudo: false) is needed to "run on container-based infrastructure" on
+# which cache: is available
+# http://docs.travis-ci.com/user/workers/container-based-infrastructure/
+sudo: false
+
+before_install:
+  - pip install -r requirements.txt
+
+script:
+  - cd IDR0001 && jupyter nbconvert --to notebook --execute convert.ipynb
