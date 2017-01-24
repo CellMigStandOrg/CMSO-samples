@@ -1,0 +1,6 @@
+Slice	Nuclei Count	Apoptosis	Apoptosis X	Apoptosis Y	Apoptosis distance
+2	201	1	372	806	457.3183
+2	201	2	350	842	462.2813
+3	217	1	514	534	514.035
+3	217	2	294	224	431.6156
+3	217	3	314	854	444.0631
