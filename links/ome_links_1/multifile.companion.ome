@@ -31,14 +31,23 @@
 			</TiffData>
 		</Pixels>
         <AnnotationRef ID="Annotation:0"/>
+        <AnnotationRef ID="Annotation:1"/>
 	</Image>
     <StructuredAnnotations>
       <MapAnnotation ID="Annotation:0" Namespace="CMSO/dpkg">
-        <Description>This is the description of the sample map  A</Description>
+        <Description>This is the derived data coming from analysis 1</Description>
         <Value>
-          <M K="filename">dp.json</M>
-          <M K="filename">objects.csv</M>
-          <M K="filename">events.csv</M>
+          <M K="FilePath">results1.json</M>
+          <M K="FilePath">objects1.csv</M>
+          <M K="FilePath">events1.csv</M>
+        </Value>
+      </MapAnnotation>
+      <MapAnnotation ID="Annotation:1" Namespace="CMSO/dpkg">
+        <Description>This is the derived data coming from analysis 2</Description>
+        <Value>
+          <M K="FilePath">results2.json</M>
+          <M K="FilePath">objects2.csv</M>
+          <M K="FilePath">events2.csv</M>
         </Value>
       </MapAnnotation>
     </StructuredAnnotations>

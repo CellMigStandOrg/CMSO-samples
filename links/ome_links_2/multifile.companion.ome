@@ -31,12 +31,27 @@
 			</TiffData>
 		</Pixels>
         <AnnotationRef ID="Annotation:0"/>
+        <AnnotationRef ID="Annotation:1"/>
 	</Image>
     <StructuredAnnotations>
       <XMLAnnotation ID="Annotation:0" Namespace="CMSO/dpkg">
-        <Description>This annotation contains the link to the derived data</Description>
+        <Description>This is the derived data coming from analysis 1</Description>
         <Value>
-          <Json Name="dp.json"/>
+          <FileList>
+            <File Path="results1.json"/>
+            <File Path="objects1.csv"/>
+            <File Path="events1.csv"/>
+          </FileList>
+        </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:1" Namespace="CMSO/dpkg">
+        <Description>This is the derived data coming from analysis 2</Description>
+        <Value>
+          <FileList>
+            <File Path="results2.json"/>
+            <File Path="objects2.csv"/>
+            <File Path="events2.csv"/>
+          </FileList>
         </Value>
       </XMLAnnotation>
     </StructuredAnnotations>
