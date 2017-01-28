@@ -30,5 +30,16 @@
 					>urn:uuid:07a89384-e358-44dc-94d8-40e786ed9655</UUID>
 			</TiffData>
 		</Pixels>
+        <AnnotationRef ID="Annotation:0"/>
 	</Image>
+    <StructuredAnnotations>
+      <MapAnnotation ID="Annotation:0" Namespace="CMSO/dpkg">
+        <Description>This is the description of the sample map  A</Description>
+        <Value>
+          <M K="filename">dp.json</M>
+          <M K="filename">objects.csv</M>
+          <M K="filename">events.csv</M>
+        </Value>
+      </MapAnnotation>
+    </StructuredAnnotations>
 </OME>
