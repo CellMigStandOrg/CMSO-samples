@@ -33,11 +33,13 @@
         <AnnotationRef ID="Annotation:0"/>
 	</Image>
     <StructuredAnnotations>
-      <XMLAnnotation ID="Annotation:0" Namespace="CMSO/dpkg">
-        <Description>This annotation contains the link to the derived data</Description>
+      <MapAnnotation ID="Annotation:0" Namespace="CMSO/dpkg">
+        <Description>This is the description of the sample map  A</Description>
         <Value>
-          <Json Name="dp.json"/>
+          <M K="filename">dp.json</M>
+          <M K="filename">objects.csv</M>
+          <M K="filename">events.csv</M>
         </Value>
-      </XMLAnnotation>
+      </MapAnnotation>
     </StructuredAnnotations>
 </OME>

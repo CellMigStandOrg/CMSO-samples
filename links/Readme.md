@@ -19,5 +19,6 @@ between different sets of files:
     ``results``
 
 -   a second proposal is to store these links in the OME-XML metadata using the
-    OME structured annotations either as [map annotations](proposal2) or
-    [XML annotations](proposal3).
+    OME structured annotations either as
+    [map annotations](proposal2/multifile.companion.ome) or
+    [XML annotations](proposal3/multifile.companion.ome)
