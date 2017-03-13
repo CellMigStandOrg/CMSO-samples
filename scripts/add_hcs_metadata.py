@@ -71,7 +71,8 @@ def main(argv):
     plate.setAttribute("Columns", "%d" % N_COLUMNS)
     add_wells(doc, plate, img_map)
     root = doc.firstChild
-    root.appendChild(plate)
+    first = root.firstChild
+    root.insertBefore(plate, first)
     output = doc.toprettyxml(indent=INDENT, encoding=doc.encoding)
     output = "\n".join(_ for _ in output.splitlines() if _.strip())
     if args.out_fn:
