@@ -6,18 +6,36 @@ import xml.dom.minidom as minidom
 INDENT = 3 * " "
 
 
-# this annotation differs among individual files
-def remove_docname(annotations):
-    docname_node = None
+def nontext_children(node):
+    for c in node.childNodes:
+        if not c.nodeType == minidom.Node.TEXT_NODE:
+            yield c
+
+
+def annotations_as_map(annotations):
+    m = {}
+    for xml_ann in nontext_children(annotations):
+        ann_value = nontext_children(xml_ann).next()
+        orig_md = nontext_children(ann_value).next()
+        key = orig_md.getElementsByTagName("Key")[0]
+        value = orig_md.getElementsByTagName("Value")[0]
+        m[key.firstChild.data.strip()] = value.firstChild.data.strip()
+    return m
+
+
+def equalize_annotations(annotations, diff_ann_keys):
+    if not diff_ann_keys:
+        return
+    to_remove = []
     for c in annotations.childNodes:
         try:
             key_node = c.getElementsByTagName("Key")[0]
         except AttributeError:
             continue
-        if key_node.firstChild.data.strip() == "Document Name":
-            docname_node = c
-    if docname_node is not None:
-        annotations.removeChild(docname_node)
+        if key_node.firstChild.data.strip() in diff_ann_keys:
+            to_remove.append(c)
+    for n in to_remove:
+        annotations.removeChild(n)
 
 
 def make_parser():
@@ -38,7 +56,8 @@ def main(argv):
         if c.nodeName == "StructuredAnnotations":
             annotations = c
             root.removeChild(c)
-    remove_docname(annotations)
+    ref_ann_map = annotations_as_map(annotations)
+    diff_ann_keys = set()
     img_count = 0
     for fn in args.fnames[1:]:
         doc = minidom.parse(fn)
@@ -46,6 +65,14 @@ def main(argv):
             img_count += 1
             node.setAttribute("ID", "Image:%d" % img_count)
             root.appendChild(node)
+        ann = doc.getElementsByTagName("StructuredAnnotations")[0]
+        ann_map = annotations_as_map(ann)
+        assert set(ann_map) == set(ref_ann_map)
+        for k, v in ref_ann_map.iteritems():
+            if ann_map[k] != v:
+                diff_ann_keys.add(k)
+    print "removing annotations with diff values:", sorted(diff_ann_keys)
+    equalize_annotations(annotations, diff_ann_keys)
     root.appendChild(annotations)
     out_doc = minidom.Document()
     out_doc.appendChild(root)
