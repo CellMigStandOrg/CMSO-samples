@@ -8,3 +8,5 @@ RUN pip install pandas
 RUN pip install seaborn
 RUN pip install tabulator
 RUN pip install xlrd
+
+USER jupyter
