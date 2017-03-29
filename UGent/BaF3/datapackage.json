@@ -1,0 +1,27 @@
+{
+    "name": "baf3-cellmia-tracking",
+    "title": "Sample cellmia tracking data for Ba/F3 cells",
+    "resources": [{
+	"name": "objects_table",
+        "path": "0001_mode1_z000_f000_tracking.csv",
+        "schema": {
+            "fields": [{
+                "name": "ID of track",
+                "type": "integer",
+                "format": "default"
+            }, {
+                "name": "time index",
+                "type": "integer",
+                "format": "default"
+            }, {
+                "name": "cell row",
+                "type": "number",
+                "format": "default"
+            }, {
+                "name": "cell col",
+                "type": "number",
+                "format": "default"
+            }]
+        }
+    }]
+}
