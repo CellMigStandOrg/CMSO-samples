@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OME xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Creator="OME Bio-Formats 5.4.0-SNAPSHOT" UUID="urn:uuid:c8239498-38a3-4b5b-8cb0-1a6b0f0441c5" xsi:schemaLocation="http://www.openmicroscopy.org/Schemas/OME/2016-06 http://www.openmicroscopy.org/Schemas/OME/2016-06/ome.xsd">
+   <Experimenter Email="CELL" FirstName="CELL" ID="Experimenter:0" LastName="USER"/>
+   <Image ID="Image:0" Name="9I5TT808_F00000010.tif">
+      <AcquisitionDate>2013-03-25T22:05:52</AcquisitionDate>
+      <Description>Camera 1376x1038, Controler present, Lightsource off</Description>
+      <Pixels BigEndian="false" DimensionOrder="XYCZT" ID="Pixels:0" Interleaved="false" PhysicalSizeX="0.322000000022352" PhysicalSizeXUnit="µm" PhysicalSizeY="0.322000000022352" PhysicalSizeYUnit="µm" SignificantBits="16" SizeC="1" SizeT="1" SizeX="1376" SizeY="1038" SizeZ="1" Type="uint16">
+         <Channel ID="Channel:0:0" SamplesPerPixel="1">
+            <LightPath/>
+         </Channel>
+         <TiffData FirstC="0" FirstT="0" FirstZ="0" IFD="0" PlaneCount="1">
+            <UUID FileName="9I5TT808_F00000010.ome.tif">urn:uuid:e5b58cc2-6a7e-47ab-bf10-482baa39590c</UUID>
+         </TiffData>
+      </Pixels>
+   </Image>
+   <StructuredAnnotations>
+      <XMLAnnotation ID="Annotation:0" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>Document Name</Key>
+               <Value>001 BF</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:1" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>ImageLength</Key>
+               <Value>1038</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:2" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>MetaDataPhotometricInterpretation</Key>
+               <Value>Monochrome</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:3" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>PhotometricInterpretation</Key>
+               <Value>BlackIsZero</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:4" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>XResolution</Key>
+               <Value>31055.900618962227</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:5" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>PageNumber</Key>
+               <Value>1 144</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:6" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>DateTime</Key>
+               <Value>2013:03:25 22:05:52</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:7" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>MetaMorph</Key>
+               <Value>no</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:8" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>Software</Key>
+               <Value>Olympus BioSystems - Cell X</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:9" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>YResolution</Key>
+               <Value>31055.900618962227</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:10" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>HostComputer</Key>
+               <Value>CELL</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:11" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>ResolutionUnit</Key>
+               <Value>Centimeter</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:12" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>Compression</Key>
+               <Value>Uncompressed</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:13" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>PlanarConfiguration</Key>
+               <Value>Chunky</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:14" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>Artist</Key>
+               <Value>CELL USER</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:15" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>SampleFormat</Key>
+               <Value>unsigned integer</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:16" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>BitsPerSample</Key>
+               <Value>16</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:17" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>NumberOfChannels</Key>
+               <Value>1</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:18" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>SamplesPerPixel</Key>
+               <Value>1</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <XMLAnnotation ID="Annotation:19" Namespace="openmicroscopy.org/OriginalMetadata">
+         <Value>
+            <OriginalMetadata>
+               <Key>ImageWidth</Key>
+               <Value>1376</Value>
+            </OriginalMetadata>
+         </Value>
+      </XMLAnnotation>
+      <MapAnnotation ID="Annotation:20" Namespace="CMSO/dpkg">
+        <Value>
+          <M K="FilePath">datapackage.json</M>
+        </Value>
+      </MapAnnotation>
+   </StructuredAnnotations>
+</OME>
