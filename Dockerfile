@@ -1,4 +1,4 @@
-FROM openmicroscopy/ome-files-jupyter
+FROM openmicroscopy/ome-files-jupyter:0.1.0
 
 USER root
 RUN pip install datapackage
