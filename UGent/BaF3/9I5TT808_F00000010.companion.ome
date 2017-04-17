@@ -176,7 +176,8 @@
       </XMLAnnotation>
       <MapAnnotation ID="Annotation:20" Namespace="CMSO/dpkg">
         <Value>
-          <M K="FilePath">datapackage.json</M>
+          <M K="FilePath">cellmia/datapackage.json</M>
+          <M K="FilePath">trackmate/datapackage.json</M>
         </Value>
       </MapAnnotation>
    </StructuredAnnotations>
