@@ -180,5 +180,10 @@
           <M K="FilePath">trackmate/datapackage.json</M>
         </Value>
       </MapAnnotation>
+      <MapAnnotation ID="Annotation:21" Namespace="CMSO/isa">
+        <Value>
+          <M K="FilePath">isatab/i_Investigation.txt</M>
+        </Value>
+      </MapAnnotation>
    </StructuredAnnotations>
 </OME>
