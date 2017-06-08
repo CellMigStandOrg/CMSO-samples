@@ -1,4 +1,5 @@
 datapackage
+isatools
 jsontableschema
 jsontableschema-pandas
 pandas
