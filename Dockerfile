@@ -1,12 +1,8 @@
-FROM openmicroscopy/ome-files-jupyter:0.1.0
+FROM openmicroscopy/ome-files-jupyter:latest
 
 USER root
-RUN pip install datapackage
-RUN pip install jsontableschema
-RUN pip install jsontableschema-pandas
-RUN pip install pandas
-RUN pip install seaborn
-RUN pip install tabulator
-RUN pip install xlrd
+COPY requirements.txt /
+RUN pip install -r /requirements.txt
+RUN pip3 install -r /requirements.txt
 
 USER jupyter
