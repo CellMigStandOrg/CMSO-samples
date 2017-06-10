@@ -1,19 +1,7 @@
-language: python
+sudo: required
 
-python: 2.7
-
-# This (sudo: false) is needed to "run on container-based infrastructure" on
-# which cache: is available
-# http://docs.travis-ci.com/user/workers/container-based-infrastructure/
-sudo: false
-
-addons:
-  apt_packages:
-  - libzmq3
-
-before_install:
-  - pip install six
-  - pip install -r requirements.txt
+services:
+ - docker
 
 script:
-  - cd IDR0001 && jupyter nbconvert --to notebook --execute convert.ipynb
+  - docker build -t cmso-jupyter .

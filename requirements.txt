@@ -1,3 +1,8 @@
 datapackage
-jupyter
+isatools
+jsontableschema
 jsontableschema-pandas
+pandas
+seaborn
+tabulator
+xlrd
