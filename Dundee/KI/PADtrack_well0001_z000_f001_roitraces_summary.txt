@@ -1,0 +1,2 @@
+ROI trace ID	Averaged Roi Size	Average Roi Velocity	Roi Path Length	Roi Displacement	Directional Persistence
+1	2798.637853	0.001183	25.546492	10.406934	0.407372
