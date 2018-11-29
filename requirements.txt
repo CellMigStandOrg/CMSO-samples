@@ -6,3 +6,5 @@ pandas
 seaborn
 tabulator
 xlrd
+rfc3986
+biotracks
